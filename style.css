@@ -1,0 +1,227 @@
+html {
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7em;
+  color: blanchedalmond;
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+}
+
+h3 {
+  display: none;
+  font-size: 4rem;
+}
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: blanchedalmond;
+  font-size: 20px;
+  margin: 0px;
+  padding: 10px 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 100vh;
+  background-color: black;
+}
+
+.blue {
+  background-color: #2B398E;
+}
+
+.purple {
+  background-color: #BB19A8;
+}
+
+.red {
+  background-color: #EB1F26;
+}
+
+.orange {
+  background-color: #FB7324;
+}
+
+.yellow {
+  background-color: #FECC0E;
+}
+
+.box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+  -webkit-transition: .5s;
+  transition: .5s;
+  -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+  line-height: 0;
+  padding: 10px;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+span {
+  font-family: 'Montserrat', sans-serif;
+  color: blanchedalmond;
+}
+
+li {
+  list-style: none;
+}
+
+.text {
+  line-height: normal;
+  display: none;
+  color: blanchedalmond;
+  padding: 15px;
+  font-size: 2rem;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+
+.category {
+  width: 100px;
+  margin-top: 50%;
+  width: 6em;
+  height: 6em;
+}
+
+.info {
+  margin-top: 2em;
+}
+
+.svg {
+  height: 60px;
+  width: 50px;
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.contactIcons {
+  height: 60px;
+  width: 60px;
+  margin-right: 20px;
+}
+
+.box:hover {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
+}
+
+.box:hover > .text {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.box:hover > span > .category {
+  display: none;
+}
+
+.box:hover > span > h3 {
+  display: block;
+}
+
+*
+.progress {
+  width: 200px;
+  height: 10px;
+  background: #f6cd13;
+  border-radius: 17px;
+  overflow: hidden;
+  border-width: 5px;
+  border-color: white;
+}
+
+.progress-bar {
+  display: block;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffd33d), color-stop(17%, #ea4aaa), color-stop(34%, #b34bff), color-stop(51%, #01feff), color-stop(68%, #ffd33d), color-stop(85%, #ea4aaa), to(#b34bff));
+  background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+  background-size: 300% 100%;
+  -webkit-animation: progress-animation 2s linear infinite;
+          animation: progress-animation 2s linear infinite;
+}
+
+.comp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: auto;
+  padding-top: 50px;
+}
+
+.compBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  padding-top: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+@-webkit-keyframes progress-animation {
+  from {
+    background-position: 0%;
+    background-position: 100%;
+  }
+  to {
+    background-position: 100%;
+    background-position: 0;
+  }
+}
+
+@keyframes progress-animation {
+  from {
+    background-position: 0%;
+    background-position: 100%;
+  }
+  to {
+    background-position: 100%;
+    background-position: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
