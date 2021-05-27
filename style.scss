@@ -1,0 +1,160 @@
+html{
+    background-color: black;
+}
+a {
+  text-decoration: none;
+  color: white
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7em;
+  color: white;
+  position: absolute;
+  left: 20px;
+  bottom: 0;
+}
+h3 {
+  display: none;
+  font-size: 4rem;
+}
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin: 0px;
+  padding:10px 0 ;
+}
+.container {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: black;
+  }
+  .blue {
+    background-color:#2B398E;
+  }
+  .purple {
+    background-color: #BB19A8;
+  }
+  .red {
+    background-color: #EB1F26;
+  }
+  .orange {
+    background-color: #FB7324;
+  }
+  .yellow {
+      background-color: #FECC0E;
+  }
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+    padding: 10px;
+    
+  }
+  .box > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+  span{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+  } 
+  li{
+    list-style: none;
+  }
+  .text {
+    line-height: normal;
+    display: none;
+    color: white;
+    padding: 15px;
+    font-size: 2rem;
+    
+  }
+  .bold {
+    font-weight: bold;
+    font-size: 2.5rem;
+  }
+  .category{
+    width: 100px;
+    margin-top: 50%; 
+    width: 6em;
+    height: 6em;
+  }
+  .info {
+    margin-top: 2em;
+  }
+  .svg {
+    height: 60px;
+    width: 50px;
+    position: absolute;
+    bottom: 60px;
+    right: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+  }
+  .contactIcons {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+  }
+  // #Hover
+  .box:hover { flex: 50%; }
+  .box:hover > .text {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .box:hover > span > .category {
+    display: none;
+  }
+  .box:hover > span > h3 {
+    display: block;
+  }
+  // Progress bar
+  *
+.progress {
+  width: 200px; 
+  height: 10px;
+  background: #f6cd13;
+  border-radius: 17px;
+  overflow: hidden;
+  border-width: 5px;
+  border-color: white;
+  }
+  .progress-bar{
+    display: block;
+    height: 100%;
+    background: linear-gradient(90deg,#ffd33d,#ea4aaa 17%,#b34bff 34%,#01feff 51%,#ffd33d 68%,#ea4aaa 85%,#b34bff);
+    background-size: 300% 100%;
+    animation: progress-animation 2s linear infinite};
+  .comp{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 50px;
+  }
+    .compBox {
+    display:flex;
+    flex-direction: column-reverse;
+    padding-top: 2rem;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }  
+@keyframes progress-animation{
+ from{ background-position: 0%;
+    background-position: 100%}
+ to {background-position: 100%;
+    background-position: 0}
+  }

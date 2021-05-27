@@ -10,7 +10,7 @@ a {
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 7em;
-  color: blanchedalmond;
+  color: white;
   position: absolute;
   left: 20px;
   bottom: 0;
@@ -23,7 +23,7 @@ h3 {
 
 h6 {
   font-family: 'Montserrat', sans-serif;
-  color: blanchedalmond;
+  color: white;
   font-size: 20px;
   margin: 0px;
   padding: 10px 0;
@@ -83,7 +83,7 @@ h6 {
 
 span {
   font-family: 'Montserrat', sans-serif;
-  color: blanchedalmond;
+  color: white;
 }
 
 li {
@@ -93,7 +93,7 @@ li {
 .text {
   line-height: normal;
   display: none;
-  color: blanchedalmond;
+  color: white;
   padding: 15px;
   font-size: 2rem;
 }
